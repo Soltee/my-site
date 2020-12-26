@@ -40,7 +40,7 @@
                     <h2 class="mt-3 lg:pt-0 lg:text-justify px-2 sm:px-40  lg:px-0 leading-normal text-indigo-700 font-semibold text-center leading-normal text-lg md:text-xl">
                        A full-stack web developer specializing in Laravel , Vue and TailwindCSS.
                     </h2>
-                    <a href="#projects" class="mt-6 px-6 py-3 lg:mr-auto w-56 font-bold uppercase text-lg tracking-wide text-white rounded-lg bg-indigo-700 hover:bg-indigo-600">
+                    <a v-smooth-scroll href="#projects" class="mt-6 px-6 py-3 lg:mr-auto w-56 font-bold uppercase text-lg tracking-wide text-white rounded-lg bg-indigo-700 hover:bg-indigo-600">
                         Check My Work
                     </a>
                 </div>
