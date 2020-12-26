@@ -11,10 +11,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Laravel | Vue Developer from Pokhara, Nepal' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '~/assets/img/soltee.png' }
     ]
   },
 
@@ -24,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '~/plugins/vue-smooth-scroll',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
