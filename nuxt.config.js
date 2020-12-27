@@ -26,6 +26,7 @@ export default {
   plugins: [
     '~/plugins/vue-smooth-scroll',
     '~/plugins/vue-simplebar',
+    '~/plugins/vue-fb-customer-chat',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
