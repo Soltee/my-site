@@ -1,5 +1,7 @@
 <template>
   <div class="max-w-6xl mx-auto px-6 py-6">
+  	
+    
     <header id="header" class="">
         <nav class="nav relative  py-3 flex flex-row justify-between items-center">
             <div>
