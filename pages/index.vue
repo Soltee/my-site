@@ -16,7 +16,7 @@
                 Check My Work
               </a>
 
-              <a href="/cv" class="mt-4 md:mt-0 md:ml-10 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-indigo-700 rounded-lg border border-indigo-700 hover:border-0 hover:bg-indigo-600 hover:text-white" target="_blank">
+              <a href="/prabin.pdf" class="mt-4 md:mt-0 md:ml-10 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-indigo-700 rounded-lg border border-indigo-700 hover:border-0 hover:bg-indigo-600 hover:text-white" target="_blank">
                   View CV
               </a>
 
