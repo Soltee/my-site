@@ -1,19 +1,20 @@
 <template>
-	<div id="viewer" ref="viewer" class="h-screen w-full">
-		<pdf src="./static/CV-Prabin.pdf" :page="1">
-		    <template slot="loading">
-		      <!-- loading content here... -->
-		    </template>
-  		</pdf>
+	<div>
+		
+	  	<client-only>
+	        <vue-pdf class="h-screen w-full" :src="pdfSrc" :page="1" @num-pages="pdfPageCount = $event"></vue-pdf>
+	    </client-only>
 	</div>
 </template>
 <script>
-import pdf from 'pdfvuer'
-	export default {
-		components: {
-		    pdf
-		  }
-	};
+export default {
+    data() {
+		return {
+		    pdfSrc: './static/prabin.pdf',
+		    pdfPageCount : 0,
+		}
+	}
+};
 </script>
 <style>
 

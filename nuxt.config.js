@@ -27,6 +27,8 @@ export default {
     '~/plugins/vue-smooth-scroll',
     '~/plugins/vue-simplebar',
     '~/plugins/vue-fb-customer-chat',
+    { src: '~/plugins/vue-pdf-js.js', mode: 'client' },
+
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
