@@ -32,30 +32,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="mt-6 flex flex-col md:flex-row md:items-center">
-            <div class="flex flex-col items-start">
-                <h1 class="lg:text-justify leading-normal text-indigo-700 font-bold text-center leading-normal text-4xl md:text-6xl">
-                    Hi! I'm Prabin.
-                </h1>
-                <h2 class="leading-normal text-indigo-700 font-semibold leading-normal text-md  md:text-xl">
-                   <span class="">Self Taught</span> Web Developer specializing in Laravel , Vue and TailwindCSS.
-                </h2>
-
-                <div class="mt-5 md:mt-10 flex flex-col md:flex-row">
-                  
-                  <a v-smooth-scroll href="#projects" class=" px-6 py-3 lg:mr-auto w-56 font-bold  text-lg capitalize tracking-wide text-center text-white rounded-lg bg-indigo-700 hover:bg-indigo-600">
-                      Check My Work
-                  </a>
-
-                  <a href="~/assets/PrabinCV.pdf" class="mt-4 md:mt-0 md:ml-10 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-indigo-700 rounded-lg border border-indigo-700 hover:border-0 hover:bg-indigo-600 hover:text-white" download>
-                      Download CV
-                  </a>
-                </div>
-            </div>
-            <div class="hidden lg:block">
-                <img class="max-w-lg object-center object-cover rounded" src="~/assets/img/me.png" alt="hero-banner">
-            </div>
-        </div>
+        
     </header>
 
     <!-- Main Body  -->

@@ -1,6 +1,33 @@
 <template>
   <div class="">
-  
+    <!-- Hero Section -->
+    <div class="mt-6 flex flex-col md:flex-row md:items-center">
+      <div class="flex flex-col items-start">
+          <h1 class="lg:text-justify leading-normal text-indigo-700 font-bold text-center leading-normal text-4xl md:text-6xl">
+              Hi! I'm Prabin.
+          </h1>
+          <h2 class="leading-normal text-indigo-700 font-semibold leading-normal text-md  md:text-xl">
+             <span class="">Self Taught</span> Web Developer specializing in Laravel , Vue and TailwindCSS.
+          </h2>
+
+          <div class="mt-5 md:mt-10 flex flex-col md:flex-row">
+            
+              <a v-smooth-scroll href="#projects" class=" px-6 py-3 lg:mr-auto w-56 font-bold  text-lg capitalize tracking-wide text-center text-white rounded-lg bg-indigo-700 hover:bg-indigo-600">
+                Check My Work
+              </a>
+
+              <a href="/cv" class="mt-4 md:mt-0 md:ml-10 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-indigo-700 rounded-lg border border-indigo-700 hover:border-0 hover:bg-indigo-600 hover:text-white" target="_blank">
+                  View CV
+              </a>
+
+
+          </div>
+      </div>
+      <div class="hidden lg:block">
+          <img class="max-w-lg object-center object-cover rounded" src="~/assets/img/me.png" alt="hero-banner">
+      </div>
+  </div>
+
     <!-- Main -->
     <main id="main" class="main">
 		<vue-simplebar>
@@ -148,8 +175,6 @@
                    	<div class="sm:w-1/2 mb-3 ">
                   		<p class="text-indigo-700 font-bold text-center leading-8 text-lg md:text-xl   text-justify md:pr-6">My full name is Prabin Gurung. Since I started programming, I have worked with different technologies and built several projects which I really enjoyed it.
                   		My current tech stack includes Laravel, Vuejs, InertiaJs, Livewire and TailwindCSS.</p>
-                      <!-- p class="text-indigo-700 font-bold text-center leading-normal  text-md   text-justify">I started my journey while I was still in high school. I used to spend most of my days coding & watching web dev tutorials which I really enjoyed. It was pretty awesome. So I decided to be a developer focusing both in design & development.</p>
-                      <p class="mt-3 text-indigo-700 font-bold text-center leading-normal  text-md   text-justify"> My current skills includes Javascript, Jquery, Vue , TailwindCSS , livewire, inertiajs and Laravel. Building projects is a better way to learn & master my skills, so I have build several projects which covers topics like payments.And some of them are listed above. Please do sure to CHECK THEM OUT. </p> -->
                   	</div>
               </div>
           </div>
@@ -161,9 +186,12 @@
 </template>
 
 <script>
+import pdf from 'vue-pdf'
 
 export default {
-
+	components : {
+    pdf,
+  }
 };
 </script>
 
