@@ -22,7 +22,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "pdfjs-dist": "^2.6.347",
-    "pdfvuer": "^1.7.5",
+    "pdfvuer": "^1.8.3",
     "postcss": "^7.0.35",
     "prettier": "^2.1.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
