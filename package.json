@@ -20,7 +20,7 @@
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9.8.6",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-prettier": "^3.4.1",
     "pdfjs-dist": "^2.6.347",
     "pdfvuer": "^1.7.5",
     "postcss": "^7.0.35",
