@@ -23,7 +23,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "pdfjs-dist": "^2.6.347",
     "pdfvuer": "^1.7.5",
-    "postcss": "^7.0.35",
+    "postcss": "^8.3.7",
     "prettier": "^2.1.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
     "vue-fb-customer-chat": "^0.2.0",
