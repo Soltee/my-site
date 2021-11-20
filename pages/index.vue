@@ -151,7 +151,7 @@
               		<div class="w-full mb-8">
                         <a   
                         	target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/Coolkapada.png" alt="Coolkapada">
+                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/coolkapada.png" alt="Coolkapada">
                         </a>
                         	<a href="https://my-imessage.herokuapp.com" target="_blank">
 	                        	<h3 class="text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Coolkapada - Ecommerce Site</h3>
