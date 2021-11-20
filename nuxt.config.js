@@ -3,7 +3,7 @@ export default {
   ssr: false,
 
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
+  target: 'server',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -26,7 +26,7 @@ export default {
   plugins: [
     '~/plugins/vue-smooth-scroll',
     '~/plugins/vue-simplebar',
-    '~/plugins/vue-fb-customer-chat',
+    // '~/plugins/vue-fb-customer-chat',
     { src: '~/plugins/vue-pdf-js.js', mode: 'client' },
 
   ],
