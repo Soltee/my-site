@@ -387,6 +387,12 @@
   					message : this.message
   				});
 
+  				const formData = {
+  					name : this.name,
+  					email : this.email,
+  					message : this.message
+  				};
+
   				if(process.env.NODE_ENV === 'production'){
 
 				  	fetch('/', {
