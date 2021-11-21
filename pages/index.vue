@@ -245,20 +245,20 @@
 		        		@submit.prevent="handleSubmit"
 		        		name="contact" 
 		        		method="POST" 
-		        		data-netlify="true"
+		        		data-netlify-honeypot="bot-field"
 		        		netlify="true">
 					  	<div class="flex flex-col mb-6 w-full">
 					    	<label for="" class="text-sm text-gray-300">Name</label> 
-					    	<input type="text" class="px-3 py-2 rounded-lg" v-model="name" />  
+					    	<input type="text" class="px-3 py-2 rounded-lg" name="name" v-model="name" />  
 					  	</div>
 					  	<div class="flex flex-col mb-6 w-full">
 					    	<label for="" class="text-sm text-gray-300">Email </label>
-					    	<input type="email" class="px-3 py-2 rounded-lg" v-model="email" />
+					    	<input type="email" class="px-3 py-2 rounded-lg"  name="email" v-model="email" />
 					  	</div>
 
 					  	<div class="flex flex-col mb-6 w-full">
 					    	<label for="" class="text-sm text-gray-300">Message</label>
-					    	<textarea rows="5" class="px-3 py-2 rounded-lg" v-model="message"></textarea>
+					    	<textarea rows="5" class="px-3 py-2 rounded-lg" name="message" v-model="message"></textarea>
 					  	</div>
 					  	<div class="flex flex-col mb-6 w-full">
 					    	<button type="submit" class="px-3 py-3 rounded-lg bg-1200 hover:opacity-70 text-white">Send</button>
@@ -364,7 +364,7 @@
 			// this.observer.observe(projectsDiv);
 	  	},
 	  	methods: {
-	  		handleSubmit(){
+	  		handleSubmit(e){
 	  			if(this.name.length < 1){
 
 					swal ( "Oops" ,  "Name is required" ,  "error" )
@@ -380,20 +380,10 @@
 	  				return;
 	  			}
 
- 
 
-  				console.log({
-  					name : this.name,
-  					email : this.email,
-  					message : this.message
-  				});
-
-  				const formData = new FormData({
-  					name : this.name,
-  					email : this.email,
-  					message : this.message
-  				});
-
+  				const formData = new FormData(e.target);
+  				console.log(new URLSearchParams(formData).toString());
+  				
   				if(process.env.NODE_ENV === 'production'){
 
 				  	fetch('/', {
