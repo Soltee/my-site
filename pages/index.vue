@@ -218,7 +218,7 @@
           	</div>
         </section>
 
-        <section id="contact" class="bg-1100">
+        <section id="contact" class="bg-1100 hidden">
           	<div class="mt-12 py-6 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center bg-1100">
           		<div class="mb-4 md:mb-0 w-full md:w-1/2 md:px-2 mt-12">
               		<h1 class="font-bold text-white text-2xl md:text-4xl tracking-wide">
@@ -246,7 +246,7 @@
 		        		name="contact" 
 		        		method="POST" 
 		        		data-netlify-honeypot="bot-field"
-		        		netlify="true">
+		        		netlify>
 					  	<div class="flex flex-col mb-6 w-full">
 					    	<label for="" class="text-sm text-gray-300">Name</label> 
 					    	<input type="text" class="px-3 py-2 rounded-lg" name="name" v-model="name" />  
@@ -343,25 +343,6 @@
   			}
   		},
 	  	mounted(){
-
-	  		// console.log(process.env.NODE_ENV);
-	  		let topIcon      = document.getElementById('top');
-	  		// this.topIcon.classList.add('hidden');
-	  // 		let projectsDiv  = document.getElementById('projects');
-	  // 		this.observer = new IntersectionObserver((entries, observer) => {
-	  // 				// console.log(entries);
-	  // 				entries.forEach((entry) => {
-	  // 					// console.log(entry);
-	  // 					if(entry.isIntersecting){
-	  // 						console.log(topIcon);
-	  // 						topIcon.classList.add('fixed bottom-0 right-0');
-	  // 						// topIcon.classList.toggle('fixed bottom-0 right-0 mr-6 mb-6');
-	  // 						// // document.getElementById('section_title').classList.toggle('fixed');
-	  // 					}
-	  // 				})
-
-	  // 		});
-			// this.observer.observe(projectsDiv);
 	  	},
 	  	methods: {
 	  		handleSubmit(e){
@@ -383,7 +364,7 @@
 
   				const formData = new FormData(e.target);
   				console.log(new URLSearchParams(formData).toString());
-  				
+
   				if(process.env.NODE_ENV === 'production'){
 
 				  	fetch('/', {
