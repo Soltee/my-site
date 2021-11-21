@@ -343,7 +343,7 @@
   		},
 	  	mounted(){
 
-
+	  		// console.log(process.env.NODE_ENV);
 	  		let topIcon      = document.getElementById('top');
 	  		// this.topIcon.classList.add('hidden');
 	  // 		let projectsDiv  = document.getElementById('projects');
@@ -386,12 +386,17 @@
   					email : this.email,
   					message : this.message
   				});
-			  	// fetch('/', {
-				  //   method: 'POST',
-				  //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-				  //   body: formData
-			  	// }).then(() => console.log('Form successfully submitted')).catch((error) =>
-			   //  alert(error))
+
+  				if(process.env.NODE_ENV === 'production'){
+
+				  	fetch('/', {
+					    method: 'POST',
+					    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+					    body: formData
+				  	}).then(() => console.log('Form successfully submitted')).catch((error) =>
+				    alert(error));
+				}
+
 			}
 	  	}
 
