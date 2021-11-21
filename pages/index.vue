@@ -245,7 +245,8 @@
 		        		@submit.prevent="handleSubmit"
 		        		name="contact" 
 		        		method="POST" 
-		        		data-netlify="true">
+		        		data-netlify="true"
+		        		netlify="true">
 					  	<div class="flex flex-col mb-6 w-full">
 					    	<label for="" class="text-sm text-gray-300">Name</label> 
 					    	<input type="text" class="px-3 py-2 rounded-lg" v-model="name" />  
@@ -387,7 +388,7 @@
   					message : this.message
   				});
 
-  				const formData = {
+  				const formData = new ormData({
   					name : this.name,
   					email : this.email,
   					message : this.message
@@ -398,7 +399,7 @@
 				  	fetch('/', {
 					    method: 'POST',
 					    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-					    body: formData
+					    body: new URLSearchParams(formData).toString()
 				  	}).then(() => console.log('Form successfully submitted')).catch((error) =>
 				    alert(error));
 				}
