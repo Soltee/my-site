@@ -399,8 +399,8 @@
 				  	fetch('/', {
 					    method: 'POST',
 					    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-					    body: new URLSearchParams(formData).toString()
-				  	}).then(() => console.log('Form successfully submitted')).catch((error) =>
+					    body: new URLSearchParams(formData).toString()g
+				  	}).then(() => swal ('Your email is being checked. We will get to you shortly.')).catch((error) =>
 				    alert(error));
 				}
 
