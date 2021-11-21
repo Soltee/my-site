@@ -12,7 +12,7 @@
 	              Hi! I'm Prabin.
 	          	</h1>
 	          	<h2 class="md:mt-3 leading-normal text-white text-white font-semibold leading-normal text-md  md:text-xl">
-	             <span class="">Passionate</span> Web Developer specializing in Laravel , Vue and TailwindCSS.
+	             	<p><span class="">Passionate</span> Web Developer specializing in Laravel , Vue and TailwindCSS.</p>
 	          	</h2>
 
 	          	<div class="mt-5 md:mt-10 flex flex-col md:flex-row">
@@ -21,8 +21,8 @@
 	                	Check My Works
 	              	</a>
 
-	             	<a href="/prabin.pdf" class="mt-4 md:mt-0 md:ml-5 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-white text-white rounded-lg border border-1200 shadow text-white hover:border-0 hover:bg-1200 text-white hover:text-white" target="_blank">
-	                  	Download CV
+	             	<a href="resume.pdf" class="mt-4 md:mt-0 md:ml-5 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-white text-white rounded-lg border border-1200 shadow text-white hover:border-0 hover:bg-1200 text-white hover:text-white" target="_blank">
+	                  	Download Resume
 	              	</a>
 
 	         	</div>
