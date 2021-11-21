@@ -388,11 +388,11 @@
   					message : this.message
   				});
 
-  				const formData = new ormData({
+  				const formData = new FormData({
   					name : this.name,
   					email : this.email,
   					message : this.message
-  				};
+  				});
 
   				if(process.env.NODE_ENV === 'production'){
 
