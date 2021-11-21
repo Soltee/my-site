@@ -26,7 +26,9 @@ export default {
   plugins: [
     '~/plugins/vue-smooth-scroll',
     '~/plugins/vue-simplebar',
-    // '~/plugins/vue-fb-customer-chat',
+    '~/plugins/progress-bar',
+    { src: '~/plugins/vue-tiny-slider.js', mode: 'client' },
+    // '~/plugins/vue-scroll-indicator',
     { src: '~/plugins/vue-pdf-js.js', mode: 'client' },
 
   ],
