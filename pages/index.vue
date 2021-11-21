@@ -18,7 +18,7 @@
 	          	<div class="mt-5 md:mt-10 flex flex-col md:flex-row">
 	            
 	              	<a v-smooth-scroll href="#projects" class=" px-6 py-3 lg:mr-auto w-56 font-bold  text-lg capitalize tracking-wide shadow-lg text-center text-white rounded-lg bg-1200 text-white hover:opacity-80">
-	                	Check My Work
+	                	Check My Works
 	              	</a>
 
 	             	<a href="/prabin.pdf" class="mt-4 md:mt-0 md:ml-5 px-6 py-3 lg:mr-auto w-56 font-bold text-center text-lg tracking-wide text-white text-white rounded-lg border border-1200 shadow text-white hover:border-0 hover:bg-1200 text-white hover:text-white" target="_blank">
@@ -28,7 +28,7 @@
 	         	</div>
 	      	</div>
 	      	<div class="hidden lg:block">
-	          	<img class="max-w-lg object-center object-cover rounded" src="~/assets/img/photo2.png" alt="hero-banner">
+	          	<img class="max-w-lg object-center object-cover rounded" data-src="~/assets/img/photo2.png" alt="hero-banner" v-lazy-load>
 	      	</div>
 	  	</div>
   	</div>
@@ -114,78 +114,66 @@
 	    	</vue-simplebar>
         </div>
 
-        <section id="projects h-screen">
-          	<!-- <div class="mt-12 py-6 px-6 max-w-6xl mx-auto">
-        		<div class="w-full mb-6">
-              		<h1 class="font-bold text-1200 text-center text-4xl tracking-wide">Projects I'm Proud Of</h1>
-              	</div>
-	        	<div class="masonry before:box-inherit after:box-inherit">
-	        		<div class="w-full mb-8">
-                        <a href="https://my-imessage.herokuapp.com" target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/Messenger.png" alt="Imessage">
-                        </a>
-                    </div>
-                    <div class="w-full mb-8">
-                        <a   
-                        	target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/Coolkapada.png" alt="Coolkapada">
-                        </a>
-                    </div>
-                    <div class="w-full mb-8">
-                        <a 
-                        	target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/invoices.png" alt="invoices">
-                        </a>
-                    </div>
-	        	</div>
-	        </div> -->
-
-          	<div class="mt-12 py-6 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-          		<div class="w-full md:w-1/2 md:pr-3">
+        <section id="projects"  class="relative">
+          
+          	<div class="mt-12 py-6 px-6 max-w-6xl mx-auto flex flex-col">
+          		<div id="" class="w-full  md:pr-3">
               		<h1 class="font-bold text-1200 text-2xl md:text-4xl tracking-wide">Projects I'm Proud Of</h1>
-              		<img class="hidden md:block w-full object-center object-cover rounded" src="~/assets/img/projects2.jpg" alt="project image">
+              		<!-- <img class="mt-4 hidden md:block w-full object-center object-cover rounded" src="~/assets/img/projects-1.svg" alt="project image"> -->
 
               	</div>
 
-              	<div class="w-full md:w-1/2 md:px-3 md:masonry before:box-inherit after:box-inherit ">
-              		<div class="w-full mb-8">
-                        <a   
+              	<div class="w-full mt-4  md:masonry-2-col lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit">
+              		<div class="w-full mb-8 break-inside">
+              			<div class="shadow-lg rounded-lg px-6 py-6">
+	                        <a   
+	                        	target="_blank">
+	                            <img v-lazy-load class="" data-src="~assets/img/ck_logo.svg" alt="Coolkapada">
+	                        </a>
+	                    </div>
+                        	<a 
                         	target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/coolkapada.png" alt="Coolkapada">
-                        </a>
-                        	<a href="https://my-imessage.herokuapp.com" target="_blank">
-	                        	<h3 class="text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Coolkapada - Ecommerce Site</h3>
+	                        	<h3 class="mt-2 text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Coolkapada - Ecommerce Site</h3>
 	                        </a>
 	                    
                     </div>
-              		<div class="w-full mb-8">
-                        <a href="https://my-imessage.herokuapp.com" target="_blank">
-                            <img class="shadow-lg hover:opacity-75 rounded-lg-tl rounded-lg-tr hover:shadow-xl" src="~assets/img/Messenger.png" alt="Imessage">
-                        </a>
+              		<div class="w-full mb-8 break-inside">
+                        <div class="shadow-lg rounded-lg px-6 py-6">
+	                        <a  
+	                        	href="https://my-imessage.herokuapp.com" 
+	                        	target="_blank">
+	                            <img v-lazy-load class="" data-src="~assets/img/i-message.svg" alt="Imessage">
+	                        </a>
+	                    </div>
                         	<a href="https://my-imessage.herokuapp.com" target="_blank">
-	                        	<h3 class="text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Messenger - Realtime Chatroom</h3>
+	                        	<h3 class="mt-2 text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Messenger - Realtime Chatroom</h3>
 	                        </a>
 	                    
 
                     </div>
-                    <div class="w-full mb-8">
-                        <a 
-                        	target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/footwear.png" alt="footwear Ecommerce ">
-                        </a>
+                    <div class="w-full mb-8 break-inside">
+                        <div class="shadow-lg rounded-lg px-6 py-6">
+	                        <a    
+	                        	target="_blank">
+	                            <img v-lazy-load class="" data-src="~assets/img/footwear_logo.svg" alt="footwear Ecommerce ">
+	                        </a>
+	                    </div>
                         	<a href="https://my-footwear.herokuapp.com" target="_blank">
-	                        	<h3 class="text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Footwear</h3>
+	                        	<h3 class="mt-2 text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">Footwear - Online Shoe Store</h3>
 	                        </a>
 	                    
                     </div>
                     
-                    <div class="w-full mb-8">
-                        <a   
-                        	target="_blank">
-                            <img class="shadow-lg hover:opacity-75 hover:shadow-xl" src="~assets/img/events.png" alt="events">
-                        </a>
-                        	<a href="https://my-imessage.herokuapp.com" target="_blank">
-	                        	<h3 class="text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">TalkEvents - Online Booking Site</h3>
+                    <div class="w-full mb-8 break-inside">
+                        <div class="shadow-lg rounded-lg px-6 py-6">
+	                        <a      
+	                        	target="_blank">
+	                            <img v-lazy-load class="" data-src="~assets/img/events.svg" alt="events">
+	                        </a>
+	                    </div>
+                        	<a 
+                        		target="_blank">
+	                        	<h3 class="mt-2 text-xl  font-semibold  hover:opacity-75 text-1200 text-center hover:bg-opacity-70">TalkEvents - Online Booking Site</h3>
 	                        </a>
 	                    
                     </div>
@@ -195,20 +183,130 @@
           	</div>
         </section>
 
+        <section id="contact" class="bg-1100">
+          	<div class="mt-12 py-6 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center bg-1100">
+          		<div class="mb-4 md:mb-0 w-full md:w-1/2 md:px-2 mt-12">
+              		<h1 class="font-bold text-white text-2xl md:text-4xl tracking-wide">
+              			Get in Touch
+              		</h1>
+                    <p class="text-lg mt-2 text-white ">
+                        We would like to hear from you. If you have any questions, feel free to message us by filling out the given form.
+                    </p>
+                    <ul class="m-0 mt-5 flex flex-row opacity-50">
+                        <a href="#" class="mr-3 text-white w-16 h-16 border border-transparent hover:border-white rounded-full">
+                             <svg 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                class="h-8 w-8 mr-2 text-white hover:text-white">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                        </a>
+
+                        
+                    </ul>
+                </div>
+
+          		<div class="w-full md:w-1/2 ">
+		        	<form 
+		        		@submit.prevent="handleSubmit"
+		        		name="contact" 
+		        		method="POST" 
+		        		data-netlify="true">
+					  	<div class="flex flex-col mb-6 w-full">
+					    	<label for="" class="text-sm text-gray-300">Name</label> 
+					    	<input type="text" class="px-3 py-2 rounded-lg" v-model="name" />  
+					  	</div>
+					  	<div class="flex flex-col mb-6 w-full">
+					    	<label for="" class="text-sm text-gray-300">Email </label>
+					    	<input type="email" class="px-3 py-2 rounded-lg" v-model="email" />
+					  	</div>
+
+					  	<div class="flex flex-col mb-6 w-full">
+					    	<label for="" class="text-sm text-gray-300">Message</label>
+					    	<textarea rows="5" class="px-3 py-2 rounded-lg" v-model="message"></textarea>
+					  	</div>
+					  	<div class="flex flex-col mb-6 w-full">
+					    	<button type="submit" class="px-3 py-3 rounded-lg bg-1200 hover:opacity-70 text-white">Send</button>
+					  	</div>
+					</form>
+				</div>
+
+	       	</div>
+	    </section>
+
     </main>
     
   </div>
 </template>
 
+
+
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+
 <script>
  	// core version + navigation, pagination modules:
   	import Swiper from 'swiper';
+  	import ScrollMagic from 'scrollmagic'
+	import throttle from 'lodash/throttle'
+	import swal from 'sweetalert';
 
   	export default {
-  		// init Swiper:
+  		data(){
+  			return {
+  				observer    : '',
+  				projectsDiv : document.getElementById('projects'),
+				name   : '',
+				email  : '',
+				message : '',
+  				
+  			}
+  		},
 	  	mounted(){
-	  		
+	  		this.observer = new IntersectionObserver((entries, observer) => {
+	  				// console.log(entries);
+	  				entries.forEach((entry) => {
+	  					// console.log(entry);
+	  					if(entry.isIntersecting){
+	  						console.log('u');
+	  						// document.getElementById('section_title').classList.toggle('fixed');
+	  					}
+	  				})
 
+	  		});
+			this.observer.observe(document.getElementById('projects'));
+	  	},
+	  	methods: {
+	  		handleSubmit(){
+	  			if(this.name.length < 1){
+
+					swal ( "Oops" ,  "Name is required" ,  "error" )
+
+	  				return;
+	  			}
+	  			if(this.email.length < 1){
+	  				swal ( "Oops" ,  "Email is required" ,  "error" )
+	  				return;
+	  			}
+	  			if(this.message.length < 1){
+	  				swal ( "Oops" ,  "Message is required" ,  "error" )
+	  				return;
+	  			}
+
+ 
+
+  				console.log({
+  					name : this.name,
+  					email : this.email,
+  					message : this.message
+  				});
+			  	// fetch('/', {
+				  //   method: 'POST',
+				  //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				  //   body: formData
+			  	// }).then(() => console.log('Form successfully submitted')).catch((error) =>
+			   //  alert(error))
+			}
 	  	}
 
 	}
