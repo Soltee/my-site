@@ -1,7 +1,10 @@
 <template>
   <div class="">
     <!-- vue-scroll-indicator-->
-    <vue-scroll-progress-bar height="12px" backgroundColor="#ffcd58" />
+    <vue-scroll-progress-bar 
+      height="6px" 
+      backgroundColor="#ff5c4d"
+      barClass='{rounded-lg}' />
 
     <!-- Main Body  -->
     <div class="">

@@ -4,7 +4,7 @@
       <nav class="flex flex-row justify-between items-center w-full ">
             <div>
                 <a href="#"  class="flex flex-row items-center">
-                    <img class="rounded-full h-12 w-12 md:h-16 md:w-16 border border-white object-contain " data-src="~assets/img/photo4.png" alt="Me" v-lazy-load>
+                    <img class="rounded-full h-12 w-12 md:h-16 md:w-16 border border-white object-contain " data-src="/img/photo4.png" alt="Me" v-lazy-load>
 
                     <!-- <span class="font-bold text-white uppercase text-2xl ">Prabin</span> -->
                 </a>
