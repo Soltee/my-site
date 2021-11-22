@@ -286,28 +286,85 @@
 						id : uuidv4(),
 						name : 'Coolkapada - Ecommerce Site',
 						logo  : '/img/ck_logo.svg',
-						screenshot : '/img/coolkapada.jpg',
+						video : '/video/coolkapada.mp4',
+
+						screenshot : [
+								{
+									id :  uuidv4(),
+									link : '/img/coolkapada.jpg'
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/cc_shop.png',
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/cc_bag_modal.png'
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/cc_checkout.png',
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/cc_thanks.png'
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/cc_login.png',
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/cc_user_dashboard.png'
+								},
+							],
 						link  : '',
 					},
 					{
 						id : uuidv4(),
 						name : 'Messenger - Realtime Chatroom',
 						logo  : '/img/imessage.svg',
-						screenshot : '/img/imessage.png',
+						video : '/video/im.mov',
+						screenshot : [
+								{
+									id :  uuidv4(),
+									link : '/img/im_welcome.png'
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/im_chat.png',
+								},
+								{
+									id :  uuidv4(),
+									link : '/img/im_account.png'
+								},
+							],
 						link  : 'https://my-imessage.herokuapp.com',
 					},
 					{
 						id : uuidv4(),
 						name : 'Footwear - Online Shoe Store',
 						logo  : '/img/footwear_logo.svg',
-						screenshot : '/img/footwear.jpg',
+						video : '',
+						screenshot : [
+								{
+									id :  uuidv4(),
+									link : '/img/footwear.jpg',
+								},
+							],
 						link  : 'https://my-footwear.herokuapp.com',
 					},
 					{
 						id : uuidv4(),
 						name : 'TalkEvents - Online Booking Site',
 						logo  : '/img/events.svg',
-						screenshot : '/img/events.jpg',
+						video : '/video/events.mov',
+						screenshot : [
+								{
+									id :  uuidv4(),
+									link : '/img/events.jpg',
+								},
+							],
 						link  : '',
 					},
 				],

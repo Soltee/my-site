@@ -3,7 +3,6 @@
       class="z-30 fixed inset-0">
         <div class="absolute inset-0 flex flex-col bg-white  h-screen overflow-y-scroll overflow-x-auto px-6 py-8">
 
-          <!-- CLOSE BUTTON -->
           <div class="flex items-center justify-between mb-3">
             <div 
               class="flex items-center">
@@ -17,7 +16,6 @@
                   {{ project.name }}
                 </h3>
             </div>
-
             <div>
               <a
                   v-if="project.link"
@@ -31,13 +29,22 @@
             </div>
           </div>
 
+          <!-- Video Intro -->
+          <video 
+            v-if="project.video"
+            :src="`${project.video}`" 
+            controls 
+            class="w-full mb-5">
+            <!-- <a href="video.ogv">Download song</a> -->
+          </video>
           <!-- Project Image -->
           
           <img 
+            v-for="image in project.screenshot"
             v-lazy-load  
-            :src="`${project.screenshot}`" 
+            :src="`${image.link}`" 
             :alt="`${project.name}`"
-            class="shadow-xl">
+            class="shadow-xl mb-8">
           
 
       </div>
