@@ -13,7 +13,7 @@
                   <li class="my-2 ml-auto mr-2">
                       <a 
                         class=""
-                         
+                        href="mailto:meprabingrg@gmail.com"
                         target="_blank">
                           <svg 
                             class="h-8 w-8  text-white hover:opacity-50 cursor-pointer"
