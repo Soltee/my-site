@@ -4,7 +4,7 @@
     <vue-scroll-progress-bar 
       height="6px" 
       backgroundColor="#ff5c4d"
-      barClass='{rounded-lg}' />
+      barClass="{'rounded-lg'}" />
 
     <!-- Main Body  -->
     <div class="">

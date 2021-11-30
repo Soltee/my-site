@@ -43,6 +43,14 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
+
+    // "/api/": {
+    //   target:
+    //     "https://jsonplaceholder.typicode.com/",
+    //   pathRewrite: { "^/api/": "" },
+    //   changeOrigin: true,
+    // }
+
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -52,13 +60,22 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
 
+    '@nuxtjs/proxy',
+
     ['nuxt-lazy-load', {
       // Your options
     }]
 
   ],
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    proxy : true
+  },
+  proxy: {
+
+  
+
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},

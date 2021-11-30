@@ -1,6 +1,6 @@
 <template>
 	<div class="">
-
+		
 		<div class="bg-gradient-to-b from-1200 via-1200 ">
 			<!-- Header -->
 	    	<Navbar />
@@ -230,7 +230,9 @@
 	import swal from 'sweetalert';
 	import { v4 as uuidv4 } from 'uuid';
 
-  	export default {
+	import { mapState, mapGetters, mapActions, mapMutations } from 'vuex'
+
+   	export default {
   		head() {
     		return {
 		      link: [
@@ -241,6 +243,11 @@
 		        }
 		      ]
 		    };
+		},
+
+		mounted(){
+			this.$store.dispatch('getUsers');
+			// console.log(this.$store.state.users);
 		},
 
   		data(){
