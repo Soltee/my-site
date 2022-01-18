@@ -52,17 +52,17 @@
 	                        :key="index"
 
 	                    	class="w-full mb-8 break-inside">
-	              			<div class="shadow-lg rounded-lg px-6 py-8">
-		                        <a   
-		                        	@click="showProject(project)"
-		                        	target="_blank">
-		                            <img 
-		                            	v-lazy-load  
-		                            	:src="`${project.logo}`" 
-		                            	:alt="`${project.name}`"
-		                            	class="cursor-pointer">
-		                        </a>
-		                    </div>
+		              			<a @click="showProject(project)"
+			                        	target="_blank">
+			                        	<div class="shadow-lg rounded-lg px-6 py-8">
+			                        
+				                            <img 
+				                            	v-lazy-load  
+				                            	:src="`${project.logo}`" 
+				                            	:alt="`${project.name}`"
+				                            	class="cursor-pointer">
+			                    		</div>
+			                    </a>
 	                        	<a 
 
 	                        		@click="showProject(project)"
