@@ -32,6 +32,7 @@
     "autoprefixer": "^10.4.2",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "kursor": "^0.1.6",
     "pdfjs-dist": "^2.6.347",
     "pdfvuer": "^1.7.5",
     "postcss": "^8.4.5",
