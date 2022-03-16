@@ -35,7 +35,7 @@
     "kursor": "^0.1.6",
     "pdfjs-dist": "^2.6.347",
     "pdfvuer": "^1.7.5",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.11",
     "prettier": "^2.1.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue-fb-customer-chat": "^0.2.0",
