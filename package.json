@@ -19,7 +19,7 @@
     "nuxt-lazy-load": "^1.2.9",
     "scrollmagic": "^2.0.8",
     "sweetalert": "^2.1.2",
-    "swiper": "^8.0.5",
+    "swiper": "^8.4.0",
     "tiny-slider": "^2.9.4",
     "uuid": "^8.3.2",
     "vue-scroll-indicator": "^0.1.3",
