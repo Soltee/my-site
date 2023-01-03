@@ -30,7 +30,7 @@
     "@nuxtjs/tailwindcss": "^5.0.0-4",
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^10.4.2",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.0.0",
     "kursor": "^0.1.6",
     "pdfjs-dist": "^2.6.347",
